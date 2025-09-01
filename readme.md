@@ -1,19 +1,18 @@
-# BookM Watch App & Widget
+<img src="Screenshots/icon.jpg" alt="icon" width="150">
 
-BookM is a simple and elegant Apple Watch app for tracking your reading progress. Add books, update pages read, and see your current book at a glance with a companion widget.
+# BookM - Reading Tracker & Digital Bookmark
+
+BookM is a simple and elegant Apple Watch app for tracking your reading progress. Add books, update pages read, and see your current book at a glance with a companion widget that can replace physical bookmarks.
 
 ## Features
 
 - 📚 Add, edit, and delete books
 - ⏳ Track pages read and total pages
-- 🔖 Mark a book as "Currently Reading"
-- ✅ Mark books as completed
-- 🟡 Beautiful progress indicators
-- 🕰️ WatchOS widget shows your current book and progress
+- 🕰️ WatchOS widget lets you quickly now what page you're at
 
 ## Screenshots
 
-*(Add screenshots here if available)*
+<img src="Screenshots/apple%20watch.png" alt="App in Apple Watch" >
 
 ## Installation
 
@@ -26,7 +25,7 @@ BookM is a simple and elegant Apple Watch app for tracking your reading progress
    - Open `BookM.xcodeproj` in Xcode.
 
 3. **Configure App Group:**
-   - Ensure the App Group identifier (`group.com.slvnn.BookM`) matches your Apple Developer account.
+   - Ensure the App Group identifier (`group.com.xxx.BookM`) matches your Apple Developer account.
    - Update entitlements if needed.
 
 4. **Build & Run:**
@@ -35,24 +34,16 @@ BookM is a simple and elegant Apple Watch app for tracking your reading progress
 ## Widget Setup
 
 - The widget reads your "Currently Reading" book from shared UserDefaults.
-- Add the widget to your Apple Watch face for quick access.
+- Add the widget to your Apple Watch Smart Stack for quick access.
 
 ## Project Structure
 
 ```
-BookM WidgetExtension.entitlements
-readme.md
 BookM Watch App/
     BookM Watch App.entitlements
     BookMApp.swift
     ContentView.swift
-    Assets.xcassets/
-        Contents.json
-        AccentColor.colorset/
-            Contents.json
-        AppIcon.appiconset/
-            BOOK-1.jpg
-            Contents.json
+    Assets.xcassets
     Views/
         AddBookView.swift
         DetailBookView.swift
@@ -62,45 +53,19 @@ BookM Watch App/
 BookM Widget/
     BookM_Widget.swift
     Info.plist
-    Assets.xcassets/
-        Contents.json
-        AccentColor.colorset/
-            Contents.json
-        AppIcon.appiconset/
-            Contents.json
-        WidgetBackground.colorset/
-            Contents.json
-BookM.xcodeproj/
-    project.pbxproj
-    project.xcworkspace/
-        contents.xcworkspacedata
-        xcshareddata/
-            swiftpm/
-                Package.resolved
-                configuration/
-        xcuserdata/
-            miguel.xcuserdatad/
-                UserInterfaceState.xcuserstate
-    xcuserdata/
-        miguel.xcuserdatad/
-            xcschemes/
-                xcschememanagement.plist
+    Assets.xcassets
 ```
 
 ## Dependencies
 
 - [SwiftUI](https://developer.apple.com/xcode/swiftui/)
 - [WidgetKit](https://developer.apple.com/documentation/widgetkit)
-- [SwiftUI_Apple_Watch_Decimal_Pad](https://github.com/slvnn/SwiftUI_Apple_Watch_Decimal_Pad) *(for numeric input)*
+- [SwiftUI_Apple_Watch_Decimal_Pad](https://github.com/slvnn/SwiftUI_Apple_Watch_Decimal_Pad) *(for numeric pad)*
 
-## Customization
-
-- Change the main color in `ShapeStyle.mainColor` for your own branding.
-- Update the App Group identifier for your team.
 
 ## Contributing
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+Please, use this code as you please. Fork it, edit, customiza and make it YOUR OWN.
 
 ## License
 
